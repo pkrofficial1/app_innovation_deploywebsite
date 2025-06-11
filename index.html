@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>App Innovation - Login</title>
+  <style>
+    /* Base styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* App title */
+    .app-title {
+      font-size: 2.4rem;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    /* Login card */
+    .login-container {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 360px;
+    }
+
+    .login-container h2 {
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #333;
+    }
+
+    /* Form inputs */
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    /* Button */
+    .login-btn {
+      width: 100%;
+      padding: 0.75rem;
+      border: none;
+      background-color: #5c6bc0;
+      color: #fff;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background-color: #3f51b5;
+    }
+
+    /* Footer links */
+    .form-footer {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .form-footer a {
+      color: #3f51b5;
+      text-decoration: none;
+    }
+
+    .form-footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 400px) {
+      .app-title {
+        font-size: 2rem;
+      }
+      .login-container {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="app-title">App Innovation</h1>
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <form>
+      <div class="form-group">
+        <label for="username">Email</label>
+        <input type="email" id="username" placeholder="you@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit" class="login-btn">Sign In</button>
+      <div class="form-footer">
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
